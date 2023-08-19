@@ -1,0 +1,22 @@
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .error-404 {
+    font-size: 96px;
+    padding-top: 80px;
+  }
+  .error-message {
+    display: flex;
+    width: 260px;
+    padding-left: 45px;
+    font-size: 18px;
+  }
+  .to-home {
+    font-size: 14px;
+    padding-bottom: 80px;
+  }
+  .error-404-page {
+    gap: 80px;
+  }
+}
+
+/*# sourceMappingURL=Error404.scss.map */

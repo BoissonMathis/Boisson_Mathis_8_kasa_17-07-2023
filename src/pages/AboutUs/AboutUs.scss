@@ -1,0 +1,60 @@
+.drop-down-section {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-self: center;
+  justify-items: center;
+  width: 1023px;
+  gap: 30px;
+}
+
+.about-content-close {
+  height: 0px;
+  visibility: hidden;
+  transform: translateY(-30px);
+  transition: var(--speed) ease;
+}
+
+.about-content-open {
+  height: fit-content;
+  visibility: visible;
+  transform: translateY(0px);
+  transition: var(--speed) ease;
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .drop-down-section {
+    gap: 20px;
+  }
+  .body .bannerAboutUs {
+    width: 336px;
+    height: 223px;
+  }
+  .body .bannerAboutUs img {
+    width: 336px;
+    height: 223px;
+  }
+  @keyframes about-content-open {
+    from {
+      height: 0px;
+      min-height: 0px;
+    }
+    to {
+      height: 170px;
+      min-height: 84px;
+    }
+  }
+  @keyframes about-content-close {
+    from {
+      height: 150px;
+      min-height: 84px;
+    }
+    to {
+      height: 0px;
+      min-height: 0px;
+    }
+  }
+}
+
+/*# sourceMappingURL=AboutUs.scss.map */

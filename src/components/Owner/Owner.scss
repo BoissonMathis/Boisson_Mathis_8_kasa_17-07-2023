@@ -1,0 +1,14 @@
+.owner {
+  display: flex;
+  gap: 20px;
+}
+.owner-name {
+  width: 93px;
+  align-self: center;
+  text-align: end;
+}
+.owner-picture {
+  width: 64px;
+  height: 64px;
+  border-radius: 50px;
+}

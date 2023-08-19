@@ -1,0 +1,40 @@
+.accommodation {
+  display: flex;
+  position: relative;
+  height: 340px;
+  width: 340px;
+
+  border: 1px solid transparent;
+  border-radius: 10px;
+  @media (max-width: 767.98px) {
+    width: 335px;
+    height: 255px;
+  }
+}
+
+.accommodation-cover {
+  width: 340px;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 10px;
+  @media (max-width: 767.98px) {
+    width: 335px;
+    height: 255px;
+  }
+}
+
+.accommodation-title {
+  position: absolute;
+  top: 285px;
+  left: 20px;
+
+  height: 50px;
+  width: 300px;
+
+  font-size: 18px;
+  color: white;
+  overflow: hidden;
+  @media (max-width: 767.98px) {
+    top: 200px;
+  }
+}

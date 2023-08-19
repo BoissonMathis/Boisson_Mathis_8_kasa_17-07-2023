@@ -1,0 +1,59 @@
+.carroussel {
+  position: relative;
+  display: flex;
+  width: 1240px;
+  height: 415px;
+  margin-bottom: 30px;
+  .arrow {
+    position: absolute;
+    align-self: center;
+
+    cursor: pointer;
+
+    z-index: 1;
+  }
+  .arrow-back {
+    rotate: 180deg;
+    left: 72px;
+  }
+  .arrow-forward {
+    left: 1120px;
+  }
+  .active-picture {
+    width: 1240px;
+    height: 415px;
+
+    position: relative;
+
+    object-fit: cover;
+    border-radius: 25px;
+  }
+  .count {
+    position: absolute;
+    left: 612px;
+    top: 370px;
+    z-index: 1;
+  }
+  @media (max-width: 767.98px) {
+    width: 335px;
+    height: 255px;
+    .active-picture {
+      width: 335px;
+      height: 255px;
+    }
+    .count {
+      display: none;
+    }
+    .arrow-forward,
+    .arrow-back {
+      width: 24px;
+      height: 24px;
+    }
+    .arrow-back {
+      left: 25px;
+    }
+    .arrow-forward {
+      left: 288px;
+    }
+  }
+}

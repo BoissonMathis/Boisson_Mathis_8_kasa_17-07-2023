@@ -1,0 +1,15 @@
+.accommodation-name {
+  height: fit-content;
+  h1,
+  h2 {
+    margin: 0px;
+  }
+  @media (max-width: 767.98px) {
+    .accommodation-name-title {
+      font-size: 18px;
+    }
+    .accommodation-name-location {
+      font-size: 14px;
+    }
+  }
+}

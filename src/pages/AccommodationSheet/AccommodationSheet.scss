@@ -1,0 +1,131 @@
+.accommodation-sheet-body {
+  gap: 0px;
+}
+
+.accommodation-sheet-info .accommodation-name-title {
+  width: 750px;
+}
+
+.accommodation-sheet-drop-down-section .arrow-position {
+  left: 510px;
+}
+
+.accommodation-sheet-info {
+  display: grid;
+  grid-template-columns: 612px 612px;
+  grid-template-rows: 70px 70px;
+  grid-gap: 20px;
+  align-items: center;
+}
+
+.one {
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: flex-start;
+}
+
+.two {
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: flex-end;
+}
+
+.tree {
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: flex-start;
+}
+
+.four {
+  grid-column: 2;
+  grid-row: 2;
+  justify-self: flex-end;
+}
+
+.accommodation-sheet-drop-down .drop-down-content,
+.accommodation-sheet-drop-down .drop-down-header {
+  width: 582px;
+}
+
+.accommodation-sheet-drop-down-section {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .accommodation-sheet-body {
+    gap: 20px;
+  }
+  .accommodation-sheet-info {
+    display: grid;
+    grid-template-columns: 335px;
+    grid-template-rows: 55px 35px 35px;
+    grid-gap: 10px;
+    align-items: center;
+  }
+  .accommodation-sheet-body .carroussel {
+    margin: 0px;
+  }
+  .one {
+    grid-row: 1;
+  }
+  .tree {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .four {
+    grid-column: 1;
+    grid-row: 3;
+    justify-self: flex-start;
+  }
+  .two {
+    grid-column: 1;
+    grid-row: 3;
+    justify-self: flex-end;
+  }
+  .accommodation-sheet-drop-down-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .accommodation-sheet-drop-down .drop-down-content,
+  .accommodation-sheet-drop-down .drop-down-header {
+    width: 335px;
+  }
+  .accommodation-sheet-info .accommodation-name {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    line-height: 25px;
+  }
+  .accommodation-sheet-info .accommodation-name-title {
+    width: fit-content;
+  }
+  .accommodation-sheet-info .tags {
+    height: 18px;
+    min-width: unset;
+    border-radius: 10px;
+    padding: 3px 10px 18px 10px;
+  }
+  .accommodation-sheet-info .tags p {
+    font-size: 10px;
+    height: 18px;
+  }
+  .accommodation-sheet-info .stars {
+    width: 18px;
+    height: 18px;
+  }
+  .accommodation-sheet-info .owner-name {
+    font-size: 12px;
+  }
+  .accommodation-sheet-info .owner-picture {
+    width: 32px;
+    height: 32px;
+  }
+  .accommodation-sheet-drop-down-section {
+    gap: 20px;
+  }
+}
+
+/*# sourceMappingURL=AccommodationSheet.scss.map */
